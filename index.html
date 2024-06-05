@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruno Barral</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style-switcher.css">
+
+
 </head>
 <body>
     <! ---------------- MAIN CONTAINER START ---------------->
@@ -328,6 +331,25 @@
     <! ---------------- MAIN CONTAINER END ---------------->
 
 
+    <! ---------------- STYLE SWITCHER START ---------------->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <div class="day-nigth s-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h4>Theme color</h4>
+        <div class="colors">
+            <span class="color" onclick="setActiveStyle('color-1')"></span>
+            <span class="color" onclick="setActiveStyle('color-2')"></span>
+            <span class="color" onclick="setActiveStyle('color-3')"></span>
+            <span class="color" onclick="setActiveStyle('color-4')"></span>
+            <span class="color" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+
+    <! ---------------- STYLE SWITCHER END ---------------->
     <! ---------------- JS FILE ---------------->
     <script src="index.js"></script>
 </body>
